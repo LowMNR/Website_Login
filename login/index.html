@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+        <title>Benvenuto</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body leftmargin="0" topmargin="0" link="white">
+        <!-- NavBar -->
+        <nav class="navbar">
+            <h1 class="logo">Menu in sviluppo</h1>
+            <ul class="nav-link">
+                <li class="active"><a href="#"><font color="white">Home</font></a></li>
+                <li><a href="/html/sis_reti.html"><font color="white">Sistemi e Reti</font></a></li>
+                <li><a href="/html/inglese.html"><font color="white">Inglese</font></a></li>
+                <li><a href="#"><font color="white">sviluppo</font></a></li>
+                <li class="ctn"><a href="login.php"><font color="white">login</font></a></li>
+            </ul>
+            <img src="/img/button.jpg" alt="" class="menu-btn">
+        </nav>
+        <header>
+            <div class="header-content">
+                <h2>Benvenuto nel mio sito web</h2>
+                <div class="line"></div>
+                <h2>QUI TROVERAI LE MIE RELAZIONI</h2>
+                <a href="#events" class="ctn">Realzioni</a>
+            </div>
+        </header>
+
+        <!-- Relazioni -->
+    <a name="events">
+    <center>
+        <section class="events">
+            <div class="title">
+                <h1>Relazioni</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="/img/sis_reti.png" alt="">
+                    <h4>Sistemi e Reti</h4>
+                    <p>Qui troverai il materiale di Sistemi e Reti</p>
+                    <a href="/html/sis_reti.html" class="ctn">Esplora</a>
+                </div>
+                <div class="col">
+                    <img src="/img/inglese.jpg" alt="">
+                    <h4>Inglese</h4>
+                    <p>Qui è presente il materiale di Inglese.</p>
+                    <a href="/html/inglese.html" class="ctn">Esplora</a>
+                </div>
+                <div class="col">
+                    <img src="/img/error_message.jpg" alt="">
+                    <h4>Informatica</h4>
+                    <p>Qui troverai il materiale di Informatica.</p>
+                    <a href="#" class="ctn">Esplora</a>
+                </div>
+            </div>
+        </section>
+    </center>
+    </a>
+
+        <script>
+            const menuBtn= document.querySelector('.menu-btn')
+            const navlink= document.querySelector('.nav-link')
+
+            menuBtn.addEventListener('click',()=>{
+                navlink.classList.toggle('mobile-menu')
+            })
+        </script>
+    </body>
+</html>

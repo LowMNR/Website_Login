@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" contente="width=device-width, initial-scale=1.0">
+        <title>Benvenuto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body leftmargin="0" topmargin="0">
+        <!-- NavBar -->
+        <nav class="navbar">
+            <h1 class="logo">Menu in sviluppo</h1>
+            <ul class="nav-link">
+                <li class="active"><a href="#">sviluppo</a></li>
+                <li><a href="#">sviluppo</a></li>
+                <li><a href="#">sviluppo</a></li>
+                <li><a href="#">sviluppo</a></li>
+                <li class="ctn"><a href="#">contatti</a></li>
+            </ul>
+            <img src="button.jpg" alt="" class="menu-btn">
+        </nav>
+        <header>
+            <div class="header-content">
+                <h2>Benvenuto nel mio sito web</h2>
+                <div class="line"></div>
+                <h2>QUI TROVERAI LE MIE RELAZIONI</h2>
+                <a href="#events" class="ctn">Realzioni</a>
+            </div>
+        </header>
+
+        <!-- Relazioni -->
+    <a name="events">
+        <section class="events">
+            <div class="title">
+                <h1>Relazioni</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="sis_reti.jpg" alt="">
+                    <h4>Sistemi e Reti</h4>
+                    <p>Qui sono presenti tutte le relazioni di Sistemi e reti.</p>
+                    <a href="#" class="ctn">Esplora</a>
+                </div>
+                <div class="col">
+                    <img src="error_message.jpg" alt="">
+                    <h4>Non Assegnato</h4>
+                    <p>***********</p>
+                    <a href="" class="ctn">****</a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const menuBtn= document.querySelector('.menu-btn')
+            const navlink= document.querySelector('.nav-link')
+
+            menuBtn.addEventListener('click',()=>{
+                navlink.classList.toggle('mobile-menu')
+            })
+        </script>
+    </a>
+    </body>
+</html>
